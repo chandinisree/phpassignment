@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>validation</title>
+  </head>
+  <script type="text/javascript" src="Formvalid.js"></script>
+  <body bgcolor="#E5B3D7 ">
+    <h1 align="center">REGISTRAION FORM</h1>
+    <form name="myform" method="post"  onsubmit="return validateForm()">
+  <table align="center">
+		  <tr>
+			<td><label>First Name:</label></td>
+			<td><input type="text"  name="fname" placeholder="Eg: ABC " maxlength="20"></td>
+		  </tr>	
+          <tr>
+            <td><label >Last name:</label></td>
+            <td><input type="text"  name="lname" placeholder="Eg: D " maxlength="20"></td>
+          </tr>
+
+          <tr>
+            <td><label>Date of birth</label></td>
+            <td><input type="date"   name="DOB" min="1900-01-01" max="2020-10-01" ></td>
+          </tr>
+
+          <tr>
+            <td><label>Mobile no:</label></td>
+				<td><input type="text"  name="phone" maxlength="10"   placeholder="Eg: 9876543210"></td>
+          </tr>
+
+          <tr>
+            <td><label>Email:</label> </td>
+			<td><input type="email"  name="email" placeholder="Eg:abc@gmail.com"></td>
+          </tr>
+          <tr>
+            	<td><label>Gender:</label></td>
+				<td><input type="radio" name="gen"  value="male"> Male &nbsp; 
+					<input type="radio" name="gen"  value="female">Female
+					<input type="radio" name="gen"  value="other">Other</td>
+
+          </tr>
+          <tr>
+              <td><label>% of Mark</label></td>
+            <td><input type="text" name="Percentage"  placeholder="Eg: 78"></td>
+            </tr>
+            
+         
+          
+
+            <tr>
+            <td> </td>
+              <td><button class="form-button">Register</button></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td> <input type="button"  onclick="location.href='Personalinfo.html';" value="Return To Home">
+</td>
+            </tr>
+
+  </table>
+    </form>
+
+  </body>
+</html>
